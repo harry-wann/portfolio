@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>function pfLang(){try{var s=localStorage.getItem('pf-lang');if(s==='zh-TW'||s==='ja'||s==='en')return s}catch(e){}var ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']);for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase();if(l.indexOf('ja')===0)return 'ja';if(l.indexOf('zh')===0)return 'zh-TW';if(l.indexOf('en')===0)return 'en'}return 'en'}function pfSet(l){try{localStorage.setItem('pf-lang',l)}catch(e){}}(function(){var p=pfLang();if(p!=='en'&&!/[?&]keep\b/.test(location.search))location.replace('xo_deck_'+p+'.html'+location.hash)})()</script>
+<style>
+body{padding-top:56px}
+.slide{zoom:var(--z,1);margin-left:auto;margin-right:auto}
+.sitebar{position:fixed;top:0;left:0;right:0;height:44px;z-index:10;display:flex;align-items:center;gap:20px;padding:0 20px;background:rgba(5,6,10,.92);backdrop-filter:blur(6px);border-bottom:1px solid #262838;font:500 14px/1 Inter,'Noto Sans TC','Noto Sans JP',sans-serif}
+.sitebar a{color:#b9bac7;text-decoration:none}.sitebar a:hover{color:#a99dff}.sitebar a.on{color:#a99dff}
+.sitebar .sp{flex:1}
+</style>
+<script>function __z(){document.documentElement.style.setProperty('--z',Math.min(1,(window.innerWidth-24)/1920))}__z();addEventListener('resize',__z)</script>
+<meta charset="utf-8"><title>XO Portfolio Deck</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet"><style>
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0e0f15;--card:#161722;--line:#262838;--text:#f3f3f6;--sub:#b9bac7;--muted:#7e8094;--acc:#8b7cff}
+html,body{background:#05060a}
+body{font-family:'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;line-break:strict}
+.slide{width:1920px;height:1080px;background:var(--bg);position:relative;overflow:hidden;page-break-after:always;padding:96px 128px 0}
+.slide+.slide{margin-top:24px}
+@media print{.slide+.slide{margin-top:0}html,body{background:var(--bg)}}
+.top{position:absolute;left:128px;top:56px;font:700 22px/1 Inter,sans-serif;color:var(--muted);letter-spacing:.04em}
+.foot{position:absolute;left:128px;right:128px;bottom:48px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted)}
+.idx{font:500 24px/1 Inter,sans-serif;color:var(--acc);margin-top:40px}
+h1{font-size:60px;font-weight:700;line-height:1.2;margin-top:14px;letter-spacing:.01em}
+.lead{font-size:28px;line-height:1.6;color:var(--sub);margin-top:20px;max-width:1000px}
+.phones{position:absolute;right:120px;top:110px;display:flex;gap:40px;align-items:flex-start}
+.ph{width:330px;text-align:center}
+.ph .frame{border-radius:46px;padding:11px;background:#1b1c22;border:2px solid #3a3b46}
+.ph img,.ph video{width:100%;display:block;border-radius:36px}
+.ph.and .frame{border-radius:8px}.ph.and img,.ph.and video{border-radius:0}
+/* bullets（2026-10-25：每頁 3～5 條短句） */
+.bl{margin-top:64px;display:flex;flex-direction:column;gap:34px}
+.bl li{list-style:none;display:flex;gap:26px;align-items:flex-start;font-size:34px;line-height:1.45;text-wrap:pretty;word-break:auto-phrase}
+.bl li::before{content:'';flex:none;width:12px;height:12px;margin-top:19px;background:var(--acc);border-radius:3px}
+.k-bullets .res{position:absolute;right:128px;top:300px}
+.k-bullets .res .n{font-size:54px;white-space:nowrap}
+.phones.n3{gap:28px}.phones.n3 .ph{width:290px}
+.ph .lab{font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.pair{width:740px}.pair img{width:100%;display:block}.pairlabs{display:flex;justify-content:space-between}.pairlabs .lab{width:338px;text-align:center;font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.points{margin-top:44px;width:960px;counter-reset:p}
+.points li{list-style:none;position:relative;padding-left:64px;font-size:26px;line-height:1.6;color:var(--text);margin-bottom:26px}
+.points li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:4px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.code{position:absolute;left:128px;bottom:104px;font:400 18px/1.4 'JetBrains Mono',Menlo,monospace;color:var(--muted)}
+.code b{font-family:'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;font-weight:500;color:var(--acc);margin-right:14px;font-size:16px}
+/* cover */
+.k-cover .kick{font-size:22px;color:var(--acc);margin-top:150px;letter-spacing:.06em}
+.k-cover .xo{font:900 220px/1 Inter,sans-serif;letter-spacing:-.02em;margin-top:24px}
+.k-cover .sub{font-size:52px;font-weight:500;margin-top:28px}
+.k-cover .role{font-size:30px;color:var(--sub);margin-top:22px}
+/* 2026-10-28 Harry：英文版字卡到手機——封面副標與角色句、有手機的頁標題都不能伸到手機底下 */
+.k-cover .sub,.k-cover .role{max-width:840px;text-wrap:balance;word-break:auto-phrase}
+.slide:has(.phones) h1{max-width:900px}
+.slide:has(.phones.n3) h1{max-width:700px}
+.k-cover .meta{position:absolute;left:128px;bottom:110px;font-size:22px;color:var(--muted);line-height:1.8}
+.k-cover .meta b{display:block;color:var(--text);font-weight:500;font-size:26px}
+.k-cover .phones{top:96px;right:140px}
+.k-cover .ph{width:360px}.k-cover .ph:nth-child(2){margin-top:90px}
+/* overview */
+.stats{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:44px 32px 42px 0}
+.stat+.stat{padding-left:36px;border-left:1px solid var(--line)}
+.stat .n{font:700 68px/1.1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;}
+.stat .l{font-size:24px;color:var(--sub);margin-top:12px;line-height:1.5}
+.rows{margin-top:48px}
+.rows div{display:flex;font-size:27px;line-height:1.5;padding:15px 0;border-bottom:1px solid var(--line)}
+.rows dt,.rows .k{width:240px;color:var(--muted);flex:none}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 30px;min-height:300px}
+.card .ct{font-size:28px;font-weight:700;line-height:1.35}
+.card .cn{font:600 18px/1 Inter,sans-serif;color:var(--acc);margin-bottom:18px}
+.card .cd{font-size:24px;line-height:1.6;color:var(--sub);margin-top:16px}
+/* web3 */
+.w3{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;width:1200px;margin-top:48px}
+.w3 .card{min-height:0;padding:28px 30px}
+.w3 .ct{font-size:25px}.w3 .cd{font-size:21px;margin-top:10px}
+/* arch */
+.ag{display:grid;grid-template-columns:150px 1fr 1fr;column-gap:40px;margin-top:30px;width:1660px}
+.ag .h{font:700 26px/1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;padding-bottom:18px}
+.ag .ln{font-size:19px;color:var(--muted);display:flex;align-items:center}
+.ag .bx{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;align-content:flex-start}
+.ag .bx span{border:1.5px solid #4a4b62;background:var(--card);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif}
+.ag .na{font-size:19px;color:var(--muted)}
+.ag .ar{height:28px;position:relative}
+.ag .ar::before{content:'';position:absolute;left:40px;top:4px;bottom:8px;border-left:2px solid #5b5c78}
+.ag .ar::after{content:'';position:absolute;left:34px;bottom:2px;border:7px solid transparent;border-top:9px solid #5b5c78;border-bottom:0}
+.ag .ext{grid-column:2 / span 2;display:flex;gap:12px}
+.ag .ext span{border:1.5px dashed #5d5f74;background:transparent;color:var(--sub);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif}
+.di{position:absolute;left:128px;bottom:150px;font-size:22px;color:var(--sub)}
+.legend{position:absolute;left:128px;bottom:104px;display:flex;gap:40px;font-size:18px;color:var(--muted)}
+.legend i{display:inline-block;width:28px;height:16px;border-radius:4px;margin-right:10px;vertical-align:-2px}
+/* case */
+.case{display:flex;gap:56px;margin-top:40px}
+.case .left{width:1120px}
+.prob{border-left:4px solid var(--acc);padding:6px 0 6px 28px;font-size:25px;line-height:1.65;color:var(--sub)}
+.tag{font:600 17px/1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;color:var(--acc);letter-spacing:.08em;margin-bottom:12px;display:block}
+.steps{margin-top:36px;counter-reset:p}
+.steps li{list-style:none;position:relative;padding-left:60px;font-size:25px;line-height:1.6;margin-bottom:20px}
+.steps li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:3px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.res{width:470px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:44px 40px;align-self:flex-start;margin-top:4px}
+.res .n{font:700 64px/1.1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif;margin-top:8px}
+.res .l{font-size:22px;color:var(--sub);margin-top:16px;line-height:1.6}
+/* three */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.three .card{min-height:560px;padding:44px 40px}
+.three .ct{font-size:34px;margin-bottom:10px}
+.three p{font-size:26px;line-height:1.65;color:var(--sub);margin-top:22px}
+/* results */
+.resg{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px}
+.resg .card{min-height:0;padding:56px 52px 52px}
+.resg .n{font:700 92px/1.05 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC',sans-serif}
+.resg .l{font-size:28px;color:var(--sub);margin-top:16px}
+.note{position:absolute;left:128px;bottom:104px;font-size:20px;color:var(--muted)}
+/* stack */
+.stack{margin-top:48px;width:1600px}
+.stack div{display:flex;padding:20px 0;border-bottom:1px solid var(--line);font-size:26px;line-height:1.5}
+.stack div:first-child{border-top:1px solid var(--line)}
+.stack .k{width:260px;flex:none;color:var(--muted);font-size:22px;padding-top:3px}
+/* links */
+.links{margin-top:64px}
+.links div{display:flex;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line);width:1200px}
+.links .k{width:260px;color:var(--muted);font-size:24px}
+.links .v{font:500 32px/1.4 Inter,sans-serif}
+.end-name{position:absolute;right:128px;bottom:104px;text-align:right;font-size:24px;color:var(--sub)}
+</style></head><body><div class="sitebar"><a href="../index.html">← All projects</a><span class="sp"></span><a href="xo_deck_zh-TW.html?keep" onclick="pfSet('zh-TW')" class="">繁中</a> <a href="xo_deck_ja.html?keep" onclick="pfSet('ja')" class="">日本語</a> <a href="xo_deck_en.html?keep" onclick="pfSet('en')" class="on">English</a></div><section class="slide k-cover"><div class="kick">Portfolio | Mobile App</div><div class="xo">XO</div><div class="sub">Anonymous chat &amp; dating app</div><div class="role">Feed, instant matching and real-time chat, with 1M+ downloads</div><div class="meta"><b>王英皓 (Harry)</b>路星股份有限公司 | Mobile App Engineer | Nov 2021 – Jul 2026</div><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/login.gif" data-still="img/login.jpg" alt=""></div></div><div class="ph ios"><div class="frame"><img src="img/home.jpg" alt=""></div></div></div></section><section class="slide k-overview"><div class="top">XO</div><div class="idx">02</div><h1>The product and my role</h1><p class="lead" style="max-width:1600px">Meet new people through a feed and topic communities, then connect through instant matching and real-time chat.</p><div class="stats"><div class="stat"><div class="n">1M+</div><div class="l">downloads</div></div><div class="stat"><div class="n">~100K</div><div class="l">monthly active users</div></div><div class="stat"><div class="n">~20K</div><div class="l">daily active users</div></div><div class="stat"><div class="n">4 markets</div><div class="l">Taiwan, the Philippines, Indonesia, the US</div></div></div><div class="rows"><div><span class="k">Role</span><span>Maintenance, refactoring and new features on iOS and Android</span></div><div><span class="k">Scope</span><span>Spec reviews, tech choices, design, implementation, testing, release, maintenance</span></div><div><span class="k">Team</span><span>PM, UI/UX designer, backend engineer, and me on the apps; two-week Scrum sprints</span></div><div><span class="k">Tools</span><span>Jira · Bitbucket · Notion · Zeplin · Figma</span></div></div><div class="foot"><span>王英皓 (Harry)</span><span>02 / 14</span></div></section><section class="slide k-grid"><div class="top">XO</div><div class="idx">03</div><h1>Key features</h1><div class="grid"><div class="card"><div class="cn">01</div><div class="ct">Feed</div><div class="cd">Swipeable cards, topics, post editor with camera filters</div></div><div class="card"><div class="cn">02</div><div class="ct">Instant match</div><div class="cd">Filter → search → mutual accept → anonymous chat room</div></div><div class="card"><div class="cn">03</div><div class="ct">Real-time chat</div><div class="cd">Text, images, voice, Giphy; typing and read status in sync</div></div><div class="card"><div class="cn">04</div><div class="ct">Missions</div><div class="cd">Daily missions and rewarded ads</div></div><div class="card"><div class="cn">05</div><div class="ct">In-app purchases &amp; subscriptions</div><div class="cd">VIP, promotions, AI chat, paid images</div></div><div class="card"><div class="cn">06</div><div class="ct">AdMob Mediation</div><div class="cd">Interstitial, banner, native, and rewarded ads</div></div><div class="card"><div class="cn">07</div><div class="ct">Web3 features</div><div class="cd">Wallets, NFTs, Chat-to-Earn, DID verification</div></div><div class="card"><div class="cn">08</div><div class="ct">Deep links</div><div class="cd">Ad link → attribution → target screen</div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>03 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">04</div><h1>Feed and posting</h1><ol class="bl" style="width:880px"><li>Card-based feed, filtered by topic</li><li>Prefetches the next batch while swiping</li><li>Post editor with camera filters and GIFs</li><li>Detects faces in a photo and covers the eyes with stickers</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/home.gif" data-still="img/home.jpg" alt=""></div><div class="lab">iOS · Feed (video)</div></div><div class="ph ios"><div class="frame"><img src="img/sticker.gif" data-still="img/sticker.jpg" alt=""></div><div class="lab">iOS · Eye stickers (video)</div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>04 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">05</div><h1>Instant match</h1><ol class="bl" style="width:720px"><li>Instant matching by chosen filters</li><li>Socket.IO events drive the matching flow</li><li>Mutual accept opens a 24-hour anonymous chat room</li></ol><div class="phones pairwrap"><div class="pair"><img src="img/match_pair.gif" data-still="img/match_pair.png" alt=""><div class="pairlabs"><div class="lab">iOS (video)</div><div class="lab">Android (video)</div></div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>05 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">06</div><h1>Real-time chat</h1><ol class="bl" style="width:720px"><li>Real-time messaging over Socket.IO</li><li>Messages persisted locally with Realm</li><li>History synced through a paging API</li><li>Text, image, GIF, and voice messages</li></ol><div class="phones pairwrap"><div class="pair"><img src="img/chat_pair.gif" data-still="img/chat_pair.png" alt=""><div class="pairlabs"><div class="lab">iOS (video)</div><div class="lab">Android (video)</div></div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>06 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">07</div><h1>Missions, IAP and ads</h1><ol class="bl" style="width:880px"><li>Subscriptions and IAP with StoreKit / Play Billing</li><li>The backend creates and verifies each order</li><li>AdMob Mediation: interstitial, banner, native, and rewarded ads</li><li>Rewarded ads on the mission board</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/store.jpg" alt=""></div><div class="lab">iOS · Mission board</div></div><div class="ph ios"><div class="frame"><img src="img/subscription.gif" data-still="img/subscription.jpg" alt=""></div><div class="lab">iOS · Subscription plans (video)</div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>07 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">08</div><h1>Web3 features</h1><ol class="bl" style="width:880px"><li>In-house wallet: balance, transfers, history</li><li>External wallets via WalletConnect</li><li>NFT bag and NFT pets</li><li>Chat-to-Earn: chat progress earns gifts and RStar</li><li>Farcaster / World ID sign-in, DID verification</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/web3.gif" data-still="img/verification.jpg" alt=""></div><div class="lab">iOS · XO Citizen verification (video)</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_manager.jpg" alt=""></div><div class="lab">iOS · Wallet manager</div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>08 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">09</div><h1>In-house wallet</h1><ol class="bl" style="width:720px"><li>Balance, tokens, and transaction history</li><li>Send: enter address and amount → review fees → send</li><li>Checks address format and balance, and estimates fees before sending</li><li>Transaction status pushed over Socket.IO: pending → confirmed</li></ol><div class="phones n3"><div class="ph ios"><div class="frame"><img src="img/wallet_home.jpg" alt=""></div><div class="lab">Wallet home</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_confirm.jpg" alt=""></div><div class="lab">Fee review</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_pending.jpg" alt=""></div><div class="lab">Transaction pending</div></div></div><div class="note">iOS v1.60 (English UI); amounts and addresses are demo data</div><div class="foot"><span>王英皓 (Harry)</span><span>09 / 14</span></div></section><section class="slide k-arch"><div class="top">XO</div><div class="idx">10</div><h1>Architecture</h1><p class="lead" style="max-width:1664px">MVVM on both platforms; ViewModels talk to views through Inputs / Outputs interfaces</p><div class="ag"><div></div><div class="h">iOS</div><div class="h">Android</div><div class="ln">UI</div><div class="bx"><span>FlowController</span><span>UIKit ViewController</span><span>SwiftUI View</span></div><div class="bx"><span>Activity / Fragment</span><span>Jetpack Compose</span><span>Navigation Component</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">ViewModel</div><div class="bx"><span>Inputs / Outputs</span><span>Combine · RxSwift</span></div><div class="bx"><span>Inputs / Outputs</span><span>Coroutines / Flow · RxJava</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">Domain</div><div class="bx"><span>UseCase</span></div><div class="bx"><span class="na" style="border:0;background:none;padding:13px 0">(ViewModel calls the Repository directly)</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">Data</div><div class="bx"><span>Repository (async/await)</span><span>Moya · Socket.IO</span><span>Realm (actor)</span></div><div class="bx"><span>Repository</span><span>Retrofit · Socket.IO</span><span>Realm DAO · Paging 3</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">External services</div><div class="ext"><span>REST API</span><span>Socket.IO server</span><span>Firebase · AdMob · Airbridge</span><span>App Store / Google Play</span></div></div><div class="foot"><span>王英皓 (Harry)</span><span>10 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">11</div><h1>Engineering workflow</h1><ol class="bl" style="width:1664px"><li>Automated builds and releases on both platforms with Fastlane + Codemagic / CircleCI</li><li>Bitbucket Pipelines triggered by tags, with separate Staging / Production lanes</li><li>AI agents in a plan → implement → review → fix loop, also writing unit tests</li><li>An in-house localization system replaced Lokalise for English, Japanese, and Traditional Chinese</li></ol><div class="foot"><span>王英皓 (Harry)</span><span>11 / 14</span></div></section><section class="slide k-results"><div class="top">XO</div><div class="idx">12</div><h1>Results</h1><div class="resg"><div class="card"><div class="n">~90% → 99%</div><div class="l">crash-free users on both platforms, sustained</div></div><div class="card"><div class="n">~50% smaller</div><div class="l">install size (trimmed third-party dependencies)</div></div><div class="card"><div class="n">3 months</div><div class="l">to refactor the entire iOS app</div></div><div class="card"><div class="n">1M+</div><div class="l">downloads</div></div></div><div class="foot"><span>王英皓 (Harry)</span><span>12 / 14</span></div></section><section class="slide k-stack"><div class="top">XO</div><div class="idx">13</div><h1>Tech Stack</h1><div class="stack"><div><span class="k">iOS</span><span>SwiftUI · UIKit · SnapKit · Combine · Swift Concurrency · RxSwift · Moya · Realm · StoreKit</span></div><div><span class="k">Android</span><span>Jetpack Compose · Navigation Component · Paging 3 · Coroutines / Flow · Hilt · Retrofit · Realm · RxJava · Play Billing</span></div><div><span class="k">Shared</span><span>Firebase · Amplitude · Google Analytics · AdMob · Socket.IO</span></div><div><span class="k">Web3</span><span>WalletConnect · Particle Wallet</span></div><div><span class="k">CI/CD</span><span>Fastlane · Codemagic · CircleCI · Bitbucket Pipelines</span></div><div><span class="k">Attribution</span><span>Airbridge · Tenjin</span></div><div><span class="k">Collaboration</span><span>Jira · Bitbucket · Notion · Zeplin · Figma</span></div></div><div class="foot"><span>王英皓 (Harry)</span><span>13 / 14</span></div></section><section class="slide k-links"><div class="top">XO</div><div class="idx">14</div><h1>Links</h1><div class="links"><div><span class="k">App Store</span><span class="v">apps.apple.com/app/id1505684382</span></div><div><span class="k">Google Play</span><span class="v">play.google.com/store/apps/details?id=me.rooit.uc</span></div><div><span class="k">Website</span><span class="v">xoxo.space</span></div></div><div class="end-name">王英皓 (Harry)<br><span style="font-size:18px;color:var(--muted)">Mobile App Engineer</span></div><div class="foot"><span></span><span>14 / 14</span></div></section></body></html>

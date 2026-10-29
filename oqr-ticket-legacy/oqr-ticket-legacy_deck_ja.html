@@ -1,0 +1,144 @@
+<!doctype html><html lang="ja"><head><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>function pfLang(){try{var s=localStorage.getItem('pf-lang');if(s==='zh-TW'||s==='ja'||s==='en')return s}catch(e){}var ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']);for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase();if(l.indexOf('ja')===0)return 'ja';if(l.indexOf('zh')===0)return 'zh-TW';if(l.indexOf('en')===0)return 'en'}return 'en'}function pfSet(l){try{localStorage.setItem('pf-lang',l)}catch(e){}}(function(){var p=pfLang();if(p!=='ja'&&!/[?&]keep\b/.test(location.search))location.replace('oqr-ticket-legacy_deck_'+p+'.html'+location.hash)})()</script>
+<style>
+body{padding-top:56px}
+.slide{zoom:var(--z,1);margin-left:auto;margin-right:auto}
+.sitebar{position:fixed;top:0;left:0;right:0;height:44px;z-index:10;display:flex;align-items:center;gap:20px;padding:0 20px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid #e3e3e6;font:500 14px/1 Inter,'Noto Sans TC','Noto Sans JP',sans-serif}
+.sitebar a{color:#404040;text-decoration:none}.sitebar a:hover{color:#e61d64}.sitebar a.on{color:#e61d64}
+.sitebar .sp{flex:1}
+</style>
+<script>function __z(){document.documentElement.style.setProperty('--z',Math.min(1,(window.innerWidth-24)/1920))}__z();addEventListener('resize',__z)</script>
+<meta charset="utf-8"><title>OQR Ticket 初版 ポートフォリオ</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet"><style>
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#ffffff;--card:#f6f6f7;--line:#e3e3e6;--text:#262626;--sub:#404040;--muted:#6b6b70;--acc:#e61d64}
+html,body{background:#e6e6e9}
+body{font-family:'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;line-break:strict}
+.slide{width:1920px;height:1080px;background:var(--bg);position:relative;overflow:hidden;page-break-after:always;padding:96px 128px 0}
+.slide+.slide{margin-top:24px}
+@media print{.slide+.slide{margin-top:0}html,body{background:var(--bg)}}
+.top{position:absolute;left:128px;top:56px;font:700 22px/1 Inter,sans-serif;color:var(--muted);letter-spacing:.04em}
+.foot{position:absolute;left:128px;right:128px;bottom:48px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted)}
+.idx{font:500 24px/1 Inter,sans-serif;color:var(--acc);margin-top:40px}
+h1{font-size:60px;font-weight:700;line-height:1.2;margin-top:14px;letter-spacing:.01em}
+.lead{font-size:28px;line-height:1.6;color:var(--sub);margin-top:20px;max-width:1000px}
+.phones{position:absolute;right:120px;top:110px;display:flex;gap:40px;align-items:flex-start}
+.ph{width:330px;text-align:center}
+.ph .frame{border-radius:46px;padding:11px;background:#1b1c22;border:2px solid #2e3036}
+.ph img,.ph video{width:100%;display:block;border-radius:36px}
+.ph.and .frame{border-radius:8px}.ph.and img,.ph.and video{border-radius:0}
+/* bullets（2026-10-25：每頁 3～5 條短句） */
+.bl{margin-top:64px;display:flex;flex-direction:column;gap:34px}
+.bl li{list-style:none;display:flex;gap:26px;align-items:flex-start;font-size:34px;line-height:1.45;text-wrap:pretty;word-break:auto-phrase}
+.bl li::before{content:'';flex:none;width:12px;height:12px;margin-top:19px;background:var(--acc);border-radius:3px}
+.k-bullets .res{position:absolute;right:128px;top:300px}
+.k-bullets .res .n{font-size:54px;white-space:nowrap}
+.phones.n3{gap:28px}.phones.n3 .ph{width:290px}
+.ph .lab{font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.pair{width:740px}.pair img{width:100%;display:block}.pairlabs{display:flex;justify-content:space-between}.pairlabs .lab{width:338px;text-align:center;font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.points{margin-top:44px;width:960px;counter-reset:p}
+.points li{list-style:none;position:relative;padding-left:64px;font-size:26px;line-height:1.6;color:var(--text);margin-bottom:26px}
+.points li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:4px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.code{position:absolute;left:128px;bottom:104px;font:400 18px/1.4 'JetBrains Mono',Menlo,monospace;color:var(--muted)}
+.code b{font-family:'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-weight:500;color:var(--acc);margin-right:14px;font-size:16px}
+/* cover */
+.k-cover .kick{font-size:22px;color:var(--acc);margin-top:150px;letter-spacing:.06em}
+.k-cover .xo{font:900 220px/1 Inter,sans-serif;letter-spacing:-.02em;margin-top:24px}
+.k-cover .sub{font-size:52px;font-weight:500;margin-top:28px}
+.k-cover .role{font-size:30px;color:var(--sub);margin-top:22px}
+/* 2026-10-28 Harry：英文版字卡到手機——封面副標與角色句、有手機的頁標題都不能伸到手機底下（同合併版） */
+.k-cover .sub,.k-cover .role{max-width:840px;text-wrap:balance;word-break:auto-phrase}
+.slide:has(.phones) h1{max-width:900px}
+.slide:has(.phones.n3) h1{max-width:700px}
+.k-cover .meta{position:absolute;left:128px;bottom:110px;font-size:22px;color:var(--muted);line-height:1.8}
+.k-cover .meta b{display:block;color:var(--text);font-weight:500;font-size:26px}
+.k-cover .phones{top:96px;right:140px}
+.k-cover .ph{width:360px}.k-cover .ph:nth-child(2){margin-top:90px}
+/* overview */
+.stats{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:44px 32px 42px 0}
+.stat+.stat{padding-left:36px;border-left:1px solid var(--line)}
+.stat .n{font:700 68px/1.1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;}
+.stat .l{font-size:24px;color:var(--sub);margin-top:12px;line-height:1.5}
+.rows{margin-top:48px}
+.rows div{display:flex;font-size:27px;line-height:1.5;padding:15px 0;border-bottom:1px solid var(--line)}
+.rows dt,.rows .k{width:240px;color:var(--muted);flex:none}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 30px;min-height:300px}
+.card .ct{font-size:28px;font-weight:700;line-height:1.35}
+.card .cn{font:600 18px/1 Inter,sans-serif;color:var(--acc);margin-bottom:18px}
+.card .cd{font-size:24px;line-height:1.6;color:var(--sub);margin-top:16px}
+/* web3 */
+.w3{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;width:1200px;margin-top:48px}
+.w3 .card{min-height:0;padding:28px 30px}
+.w3 .ct{font-size:25px}.w3 .cd{font-size:21px;margin-top:10px}
+/* arch */
+.ag{display:grid;grid-template-columns:150px 1fr 1fr;column-gap:40px;margin-top:30px;width:1660px}
+.ag .h{font:700 26px/1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;padding-bottom:18px}
+.ag .ln{font-size:19px;color:var(--muted);display:flex;align-items:center}
+.ag .bx{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;align-content:flex-start}
+.ag .bx span{border:1.5px solid #c9c9ce;background:var(--card);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.ag .na{font-size:19px;color:var(--muted)}
+.ag .ar{height:28px;position:relative}
+.ag .ar::before{content:'';position:absolute;left:40px;top:4px;bottom:8px;border-left:2px solid #9a9aa0}
+.ag .ar::after{content:'';position:absolute;left:34px;bottom:2px;border:7px solid transparent;border-top:9px solid #9a9aa0;border-bottom:0}
+.ag .ext{grid-column:2 / span 2;display:flex;gap:12px}
+.ag .ext span{border:1.5px dashed #a5a5ab;background:transparent;color:var(--sub);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.di{position:absolute;left:128px;bottom:150px;font-size:22px;color:var(--sub)}
+.legend{position:absolute;left:128px;bottom:104px;display:flex;gap:40px;font-size:18px;color:var(--muted)}
+.legend i{display:inline-block;width:28px;height:16px;border-radius:4px;margin-right:10px;vertical-align:-2px}
+/* case */
+.case{display:flex;gap:56px;margin-top:40px}
+.case .left{width:1120px}
+.prob{border-left:4px solid var(--acc);padding:6px 0 6px 28px;font-size:25px;line-height:1.65;color:var(--sub)}
+.tag{font:600 17px/1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--acc);letter-spacing:.08em;margin-bottom:12px;display:block}
+.steps{margin-top:36px;counter-reset:p}
+.steps li{list-style:none;position:relative;padding-left:60px;font-size:25px;line-height:1.6;margin-bottom:20px}
+.steps li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:3px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.res{width:470px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:44px 40px;align-self:flex-start;margin-top:4px}
+.res .n{font:700 64px/1.1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;margin-top:8px}
+.res .l{font-size:22px;color:var(--sub);margin-top:16px;line-height:1.6}
+/* three */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.three .card{min-height:560px;padding:44px 40px}
+.three .ct{font-size:34px;margin-bottom:10px}
+.three p{font-size:26px;line-height:1.65;color:var(--sub);margin-top:22px}
+/* results */
+.resg{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px}
+.resg .card{min-height:0;padding:56px 52px 52px}
+.resg .n{font:700 92px/1.05 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.resg .l{font-size:28px;color:var(--sub);margin-top:16px}
+.note{position:absolute;left:128px;bottom:104px;font-size:20px;color:var(--muted)}
+/* cover cards (no screens) */
+.ccards{position:absolute;right:128px;top:200px;width:640px;display:flex;flex-direction:column;align-items:stretch}
+.ccard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:40px 44px}
+.ccard.on{border-color:var(--acc);background:#fde8ef}
+.ccard .ck{font:600 20px/1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--acc);letter-spacing:.06em}
+.ccard .ct2{font-size:40px;font-weight:700;margin-top:18px;line-height:1.3}
+.ccard .cd2{font-size:24px;color:var(--sub);margin-top:14px;line-height:1.55}
+.carr{height:72px;position:relative}.carr::before{content:'';position:absolute;left:60px;top:10px;bottom:16px;border-left:3px solid #9a9aa0}
+.carr::after{content:'';position:absolute;left:52px;bottom:6px;border:10px solid transparent;border-top:12px solid #9a9aa0;border-bottom:0}
+/* larger arch for decks with few layers */
+.big .ag{margin-top:52px;row-gap:0}.big .ag .bx span,.big .ag .ext span{font-size:23px;padding:13px 16px}.big .ag .ln{font-size:23px}.big .ag .h{font-size:30px;padding-bottom:22px}.big .ag .ar{height:44px}
+/* shared row */
+.ag .bx.shared span{border-color:var(--acc);background:#fde8ef}
+/* comparison table */
+.cmp{margin-top:44px;width:1664px;border-collapse:collapse}
+.cmp th{font:600 22px/1.4 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--muted);text-align:left;padding:0 0 14px;border-bottom:1px solid var(--line)}
+.cmp td{font-size:25px;line-height:1.45;padding:15px 24px 15px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp td:first-child{color:var(--muted);font-size:22px;width:220px;padding-top:18px}
+.cmp th:nth-child(2),.cmp td:nth-child(2){width:700px}
+.cmp td:nth-child(3){color:var(--text)}
+/* stack */
+.stack{margin-top:48px;width:1600px}
+.stack div{display:flex;padding:20px 0;border-bottom:1px solid var(--line);font-size:26px;line-height:1.5}
+.stack div:first-child{border-top:1px solid var(--line)}
+.stack .k{width:260px;flex:none;color:var(--muted);font-size:22px;padding-top:3px}
+/* links */
+.links{margin-top:64px}
+.links div{display:flex;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line);width:1200px}
+.links .k{width:260px;color:var(--muted);font-size:24px}
+.links .v{font:500 32px/1.4 Inter,sans-serif}
+.end-name{position:absolute;right:128px;bottom:104px;text-align:right;font-size:24px;color:var(--sub)}
+</style></head><body><div class="sitebar"><a href="../index.html">← 作品一覧</a><span class="sp"></span><a href="oqr-ticket-legacy_deck_zh-TW.html?keep" onclick="pfSet('zh-TW')" class="">繁中</a> <a href="oqr-ticket-legacy_deck_ja.html?keep" onclick="pfSet('ja')" class="on">日本語</a> <a href="oqr-ticket-legacy_deck_en.html?keep" onclick="pfSet('en')" class="">English</a></div><section class="slide k-cover"><div class="kick">ポートフォリオ｜モバイルアプリ</div><div class="xo" style="font-size:150px">OQR Ticket</div><div class="sub">チケット販売アプリ（初版）</div><div class="role">SNS ログイン・チケットのダウンロード・2段階の動的 QR コードでの入場</div><div class="meta"><b>王英皓（Harry）</b>優仕達資訊股份有限公司｜モバイルアプリエンジニア｜2019年11月～2021年10月</div><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/qr2.gif" data-still="img/qr.jpg" alt=""></div></div><div class="ph ios"><div class="frame"><img src="img/tickets.jpg" alt=""></div></div></div></section><section class="slide k-overview"><div class="top">OQR Ticket 初版</div><div class="idx">02</div><h1>プロダクトと担当範囲</h1><p class="lead" style="max-width:1600px">OQR Ticket の初版アプリ。チケットを購入して端末に保存し、入場時は QR コードを提示します。</p><div class="stats"><div class="stat"><div class="n">両OS</div><div class="l">iOS／Android ともに引き継ぎ</div></div><div class="stat"><div class="n">引き継ぎ</div><div class="l">保守に加えて新機能を開発</div></div><div class="stat"><div class="n">→ 新版</div><div class="l">その後、新版をゼロから開発</div></div></div><div class="rows"><div><span class="k">担当</span><span>初版 iOS／Android の保守と新機能開発</span></div><div><span class="k">担当範囲</span><span>両OSの機能開発・不具合修正・リリース</span></div><div><span class="k">構成</span><span>iOS は UIKit ＋ Storyboard（MVC）、Android は Java</span></div><div><span class="k">その後</span><span>新版 OQR Ticket をゼロから開発（Kotlin Multiplatform）</span></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>02 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">03</div><h1>ログインと会員登録</h1><ol class="bl" style="width:880px"><li>OQR アカウントか Google・Facebook・LINE、iOS は Apple ログインにも対応</li><li>会員登録をメール認証・電話番号認証・情報入力の3段階に</li><li>登録の進み具合はサーバーに保存し、中断しても続きから再開</li><li>Universal Links／App Links で認証メールからアプリを直接表示</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/register2.gif" data-still="img/register.jpg" alt=""></div><div class="lab">iOS・3段階の会員登録</div></div><div class="ph ios"><div class="frame"><img src="img/login.gif" data-still="img/login.jpg" alt=""></div><div class="lab">iOS・OQR アカウントでログイン</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>03 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">04</div><h1>SNS ログイン</h1><ol class="bl" style="width:880px"><li>ログイン画面に Google・Facebook・LINE、iOS は Apple も統合</li><li>各 SDK の認可を自社バックエンドに渡し、OQR のログイントークンに交換</li><li>初回の SNS ログインでは続けて情報入力へ</li><li>ログイン後は OQR アカウントと同じくチケットをダウンロード</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/third2.gif" data-still="img/third2.jpg" alt=""></div><div class="lab">iOS・SNS ログイン</div></div><div class="ph and"><div class="frame"><img src="img/and_login.jpg" alt=""></div><div class="lab">Android・ログイン画面</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>04 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">05</div><h1>チケット一覧と端末内データ</h1><ol class="bl" style="width:880px"><li>チケット画面でサーバーと照合し、自動でダウンロード・削除</li><li>機種変更後はダウンロード履歴からチケットを再取得</li><li>iOS は FMDB／SQLCipher で DB を暗号化し、鍵は Keychain に保存</li><li>Android は FCM で入場状況をリアルタイムに反映</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/tickets.jpg" alt=""></div><div class="lab">iOS・チケット一覧</div></div><div class="ph and"><div class="frame"><img src="img/and_tickets.jpg" alt=""></div><div class="lab">Android・チケット一覧</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>05 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">06</div><h1>チケット情報</h1><ol class="bl" style="width:1180px"><li>チケット情報に券番号・券種・料金・入場開始時刻を表示</li><li>イベントのチケット説明・入場案内を下部に表示</li><li>参加者情報が必要なイベントでは、入力済みの情報を表示</li><li>ここからチケットの譲渡や必要な書類の記入も可能</li></ol><div class="phones n1"><div class="ph ios"><div class="frame"><img src="img/ticketinfo.jpg" alt=""></div><div class="lab">iOS・チケット情報</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>06 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">07</div><h1>入場用 QR コード</h1><ol class="bl" style="width:880px"><li>新しい入場用 QR コードと音波の判定方法に書き換え</li><li>2段階で入場：ゲートの音波を受信したら2つ目の QR コードへ切り替え</li><li>複数チケットを左右に切り替え、入場後は次へ自動移動</li><li>初回はマイクのテストで、端末ごとに判定基準を調整</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/qr2.gif" data-still="img/qr.jpg" alt=""></div><div class="lab">iOS・入場用 QR コード</div></div><div class="ph and"><div class="frame"><img src="img/and_qr.jpg" alt=""></div><div class="lab">Android・入場用 QR コード</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>07 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">08</div><h1>入場済み</h1><ol class="bl" style="width:1180px"><li>ゲートの確認後、2つ目の QR コードへ切り替え</li><li>2段階目が完了すると「入場済み」を表示し、状態を端末に保存</li><li>入場済みのチケットは、未入場の次のチケットへ自動で切り替え</li><li>Android は FCM のプッシュで入場状況を即時反映</li></ol><div class="phones n1"><div class="ph ios"><div class="frame"><img src="img/entered.jpg" alt=""></div><div class="lab">iOS・2段階完了、入場済み</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>08 / 15</span></div></section><section class="slide k-grid"><div class="top">OQR Ticket 初版</div><div class="idx">09</div><h1>引き継ぎ後に対応したこと</h1><div class="grid"><div class="card"><div class="cn">01</div><div class="ct">SNS ログイン</div><div class="cd">Google・Facebook・LINE、iOS は Apple も</div></div><div class="card"><div class="cn">02</div><div class="ct">3段階の会員登録</div><div class="cd">メール・電話番号・情報入力、途中から再開</div></div><div class="card"><div class="cn">03</div><div class="ct">チケット一覧</div><div class="cd">自動ダウンロード・削除・機種変更時の再取得</div></div><div class="card"><div class="cn">04</div><div class="ct">入場用 QR コード</div><div class="cd">新しい QR コードと音波の判定方法</div></div><div class="card"><div class="cn">05</div><div class="ct">複数チケットの切り替え</div><div class="cd">左右に切り替え、入場後は次へ自動移動</div></div><div class="card"><div class="cn">06</div><div class="ct">暗号化 DB</div><div class="cd">iOS は FMDB／SQLCipher、Android は SQLCipher</div></div><div class="card"><div class="cn">07</div><div class="ct">Universal Links</div><div class="cd">認証メールのリンクからアプリを直接表示</div></div><div class="card"><div class="cn">08</div><div class="ct">多言語対応</div><div class="cd">5言語の修正と追加</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>09 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">10</div><h1>安定性と通信処理</h1><ol class="bl" style="width:1664px"><li>アップデート後に Keychain が空になるクラッシュを修正</li><li>iOS・Xcode の更新に合わせ、全画面 modal やステータスバーの互換性を修正</li><li>iOS の新機能は Alamofire の共通 API 呼び出しに統一</li><li>Android は Timber で Crashlytics にログを送信</li></ol><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>10 / 15</span></div></section><section class="slide k-table"><div class="top">OQR Ticket 初版</div><div class="idx">11</div><h1>初版と新版</h1><table class="cmp"><tr><th>項目</th><th>初版（引き継ぎ）</th><th>新版（ゼロから開発）</th></tr><tr><td>言語</td><td>iOS は Swift、Android は Java</td><td>iOS は Swift、Android は Kotlin 中心</td></tr><tr><td>構成</td><td>MVC、画面から直接 API を呼び出し</td><td>MVVM ＋ Hybrid（WebView）</td></tr><tr><td>共通ロジック</td><td>なし（両OSで別々に実装）</td><td>Kotlin Multiplatform</td></tr><tr><td>通信</td><td>iOS は URLSession と Alamofire、Android は AsyncTask</td><td>Ktor（共通）</td></tr><tr><td>端末内データ</td><td>SQLCipher（両OSで別々に SQL を記述）</td><td>SQLDelight（共通）</td></tr><tr><td>入場</td><td>2段階の QR コード＋ゲートの音波</td><td>同じ仕組み、SDK は共通モジュールで扱う</td></tr></table><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>11 / 15</span></div></section><section class="slide k-bullets"><div class="top">OQR Ticket 初版</div><div class="idx">12</div><h1>Android 版（Java）</h1><ol class="bl" style="width:720px"><li>Android は Java で実装し、画面と機能は iOS と同一</li><li>ログイン・3段階の会員登録・チケット一覧・入場 QR コードを同じく実装</li><li>入場状況は FCM で即時更新、端末内データは SQLCipher で暗号化</li><li>新版では Kotlin 中心に移行し、Kotlin Multiplatform で iOS とロジックを共通化</li></ol><div class="phones n3"><div class="ph and"><div class="frame"><img src="img/and_login.jpg" alt=""></div><div class="lab">Android・ログイン</div></div><div class="ph and"><div class="frame"><img src="img/and_register.jpg" alt=""></div><div class="lab">Android・3段階の会員登録</div></div><div class="ph and"><div class="frame"><img src="img/and_qr.jpg" alt=""></div><div class="lab">Android・入場用 QR コード</div></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>12 / 15</span></div></section><section class="slide k-arch big"><div class="top">OQR Ticket 初版</div><div class="idx">13</div><h1>初版のアーキテクチャ</h1><p class="lead" style="max-width:1664px">MVC 構成。通信とデータモデルは Singleton に集約し、新機能は共通処理を経由</p><div class="ag"><div></div><div class="h">iOS</div><div class="h">Android</div><div class="ln">画面</div><div class="bx"><span>UIKit · Storyboard</span></div><div class="bx"><span>Activity · Fragment</span><span>View (XML)</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">通信</div><div class="bx"><span>Singleton · URLSession</span><span>CommonUtility · Alamofire</span></div><div class="bx"><span>AsyncTask · HttpURLConnection</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">データ</div><div class="bx"><span>FMDB / SQLCipher</span><span>Keychain</span></div><div class="bx"><span>SQLCipher</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">外部サービス</div><div class="ext"><span>チケット API</span><span>デジタルキー SDK</span><span>入場ゲート</span><span>Firebase</span><span>Google Maps</span></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>13 / 15</span></div></section><section class="slide k-stack"><div class="top">OQR Ticket 初版</div><div class="idx">14</div><h1>Tech Stack</h1><div class="stack"><div><span class="k">iOS</span><span>UIKit · Storyboard · Alamofire · Google Maps SDK · FMDB / SQLCipher</span></div><div><span class="k">Android</span><span>Java · View (XML) · SQLCipher · Google Maps</span></div><div><span class="k">共通</span><span>Firebase · Google / Facebook / LINE / Apple Login</span></div></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>14 / 15</span></div></section><section class="slide k-links"><div class="top">OQR Ticket 初版</div><div class="idx">15</div><h1>リンク</h1><div class="links"><div><span class="k">公式サイト</span><span class="v">oqrticket.com</span></div></div><div class="end-name">王英皓（Harry）<br><span style="font-size:18px;color:var(--muted)">Mobile App Engineer</span></div><div class="foot"><span>王英皓（Harry）｜OQR Ticket 初版 ポートフォリオ</span><span>15 / 15</span></div></section></body></html>

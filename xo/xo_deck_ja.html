@@ -1,0 +1,124 @@
+<!doctype html><html lang="ja"><head><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>function pfLang(){try{var s=localStorage.getItem('pf-lang');if(s==='zh-TW'||s==='ja'||s==='en')return s}catch(e){}var ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']);for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase();if(l.indexOf('ja')===0)return 'ja';if(l.indexOf('zh')===0)return 'zh-TW';if(l.indexOf('en')===0)return 'en'}return 'en'}function pfSet(l){try{localStorage.setItem('pf-lang',l)}catch(e){}}(function(){var p=pfLang();if(p!=='ja'&&!/[?&]keep\b/.test(location.search))location.replace('xo_deck_'+p+'.html'+location.hash)})()</script>
+<style>
+body{padding-top:56px}
+.slide{zoom:var(--z,1);margin-left:auto;margin-right:auto}
+.sitebar{position:fixed;top:0;left:0;right:0;height:44px;z-index:10;display:flex;align-items:center;gap:20px;padding:0 20px;background:rgba(5,6,10,.92);backdrop-filter:blur(6px);border-bottom:1px solid #262838;font:500 14px/1 Inter,'Noto Sans TC','Noto Sans JP',sans-serif}
+.sitebar a{color:#b9bac7;text-decoration:none}.sitebar a:hover{color:#a99dff}.sitebar a.on{color:#a99dff}
+.sitebar .sp{flex:1}
+</style>
+<script>function __z(){document.documentElement.style.setProperty('--z',Math.min(1,(window.innerWidth-24)/1920))}__z();addEventListener('resize',__z)</script>
+<meta charset="utf-8"><title>XO ポートフォリオ</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet"><style>
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0e0f15;--card:#161722;--line:#262838;--text:#f3f3f6;--sub:#b9bac7;--muted:#7e8094;--acc:#8b7cff}
+html,body{background:#05060a}
+body{font-family:'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;line-break:strict}
+.slide{width:1920px;height:1080px;background:var(--bg);position:relative;overflow:hidden;page-break-after:always;padding:96px 128px 0}
+.slide+.slide{margin-top:24px}
+@media print{.slide+.slide{margin-top:0}html,body{background:var(--bg)}}
+.top{position:absolute;left:128px;top:56px;font:700 22px/1 Inter,sans-serif;color:var(--muted);letter-spacing:.04em}
+.foot{position:absolute;left:128px;right:128px;bottom:48px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted)}
+.idx{font:500 24px/1 Inter,sans-serif;color:var(--acc);margin-top:40px}
+h1{font-size:60px;font-weight:700;line-height:1.2;margin-top:14px;letter-spacing:.01em}
+.lead{font-size:28px;line-height:1.6;color:var(--sub);margin-top:20px;max-width:1000px}
+.phones{position:absolute;right:120px;top:110px;display:flex;gap:40px;align-items:flex-start}
+.ph{width:330px;text-align:center}
+.ph .frame{border-radius:46px;padding:11px;background:#1b1c22;border:2px solid #3a3b46}
+.ph img,.ph video{width:100%;display:block;border-radius:36px}
+.ph.and .frame{border-radius:8px}.ph.and img,.ph.and video{border-radius:0}
+/* bullets（2026-10-25：每頁 3～5 條短句） */
+.bl{margin-top:64px;display:flex;flex-direction:column;gap:34px}
+.bl li{list-style:none;display:flex;gap:26px;align-items:flex-start;font-size:34px;line-height:1.45;text-wrap:pretty;word-break:auto-phrase}
+.bl li::before{content:'';flex:none;width:12px;height:12px;margin-top:19px;background:var(--acc);border-radius:3px}
+.k-bullets .res{position:absolute;right:128px;top:300px}
+.k-bullets .res .n{font-size:54px;white-space:nowrap}
+.phones.n3{gap:28px}.phones.n3 .ph{width:290px}
+.ph .lab{font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.pair{width:740px}.pair img{width:100%;display:block}.pairlabs{display:flex;justify-content:space-between}.pairlabs .lab{width:338px;text-align:center;font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.points{margin-top:44px;width:960px;counter-reset:p}
+.points li{list-style:none;position:relative;padding-left:64px;font-size:26px;line-height:1.6;color:var(--text);margin-bottom:26px}
+.points li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:4px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.code{position:absolute;left:128px;bottom:104px;font:400 18px/1.4 'JetBrains Mono',Menlo,monospace;color:var(--muted)}
+.code b{font-family:'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-weight:500;color:var(--acc);margin-right:14px;font-size:16px}
+/* cover */
+.k-cover .kick{font-size:22px;color:var(--acc);margin-top:150px;letter-spacing:.06em}
+.k-cover .xo{font:900 220px/1 Inter,sans-serif;letter-spacing:-.02em;margin-top:24px}
+.k-cover .sub{font-size:52px;font-weight:500;margin-top:28px}
+.k-cover .role{font-size:30px;color:var(--sub);margin-top:22px}
+/* 2026-10-28 Harry：英文版字卡到手機——封面副標與角色句、有手機的頁標題都不能伸到手機底下 */
+.k-cover .sub,.k-cover .role{max-width:840px;text-wrap:balance;word-break:auto-phrase}
+.slide:has(.phones) h1{max-width:900px}
+.slide:has(.phones.n3) h1{max-width:700px}
+.k-cover .meta{position:absolute;left:128px;bottom:110px;font-size:22px;color:var(--muted);line-height:1.8}
+.k-cover .meta b{display:block;color:var(--text);font-weight:500;font-size:26px}
+.k-cover .phones{top:96px;right:140px}
+.k-cover .ph{width:360px}.k-cover .ph:nth-child(2){margin-top:90px}
+/* overview */
+.stats{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:44px 32px 42px 0}
+.stat+.stat{padding-left:36px;border-left:1px solid var(--line)}
+.stat .n{font:700 68px/1.1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;}
+.stat .l{font-size:24px;color:var(--sub);margin-top:12px;line-height:1.5}
+.rows{margin-top:48px}
+.rows div{display:flex;font-size:27px;line-height:1.5;padding:15px 0;border-bottom:1px solid var(--line)}
+.rows dt,.rows .k{width:240px;color:var(--muted);flex:none}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 30px;min-height:300px}
+.card .ct{font-size:28px;font-weight:700;line-height:1.35}
+.card .cn{font:600 18px/1 Inter,sans-serif;color:var(--acc);margin-bottom:18px}
+.card .cd{font-size:24px;line-height:1.6;color:var(--sub);margin-top:16px}
+/* web3 */
+.w3{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;width:1200px;margin-top:48px}
+.w3 .card{min-height:0;padding:28px 30px}
+.w3 .ct{font-size:25px}.w3 .cd{font-size:21px;margin-top:10px}
+/* arch */
+.ag{display:grid;grid-template-columns:150px 1fr 1fr;column-gap:40px;margin-top:30px;width:1660px}
+.ag .h{font:700 26px/1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;padding-bottom:18px}
+.ag .ln{font-size:19px;color:var(--muted);display:flex;align-items:center}
+.ag .bx{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;align-content:flex-start}
+.ag .bx span{border:1.5px solid #4a4b62;background:var(--card);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.ag .na{font-size:19px;color:var(--muted)}
+.ag .ar{height:28px;position:relative}
+.ag .ar::before{content:'';position:absolute;left:40px;top:4px;bottom:8px;border-left:2px solid #5b5c78}
+.ag .ar::after{content:'';position:absolute;left:34px;bottom:2px;border:7px solid transparent;border-top:9px solid #5b5c78;border-bottom:0}
+.ag .ext{grid-column:2 / span 2;display:flex;gap:12px}
+.ag .ext span{border:1.5px dashed #5d5f74;background:transparent;color:var(--sub);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.di{position:absolute;left:128px;bottom:150px;font-size:22px;color:var(--sub)}
+.legend{position:absolute;left:128px;bottom:104px;display:flex;gap:40px;font-size:18px;color:var(--muted)}
+.legend i{display:inline-block;width:28px;height:16px;border-radius:4px;margin-right:10px;vertical-align:-2px}
+/* case */
+.case{display:flex;gap:56px;margin-top:40px}
+.case .left{width:1120px}
+.prob{border-left:4px solid var(--acc);padding:6px 0 6px 28px;font-size:25px;line-height:1.65;color:var(--sub)}
+.tag{font:600 17px/1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;color:var(--acc);letter-spacing:.08em;margin-bottom:12px;display:block}
+.steps{margin-top:36px;counter-reset:p}
+.steps li{list-style:none;position:relative;padding-left:60px;font-size:25px;line-height:1.6;margin-bottom:20px}
+.steps li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:3px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.res{width:470px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:44px 40px;align-self:flex-start;margin-top:4px}
+.res .n{font:700 64px/1.1 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;margin-top:8px}
+.res .l{font-size:22px;color:var(--sub);margin-top:16px;line-height:1.6}
+/* three */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.three .card{min-height:560px;padding:44px 40px}
+.three .ct{font-size:34px;margin-bottom:10px}
+.three p{font-size:26px;line-height:1.65;color:var(--sub);margin-top:22px}
+/* results */
+.resg{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px}
+.resg .card{min-height:0;padding:56px 52px 52px}
+.resg .n{font:700 92px/1.05 Inter,'Inter','Noto Sans CJK JP','Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif}
+.resg .l{font-size:28px;color:var(--sub);margin-top:16px}
+.note{position:absolute;left:128px;bottom:104px;font-size:20px;color:var(--muted)}
+/* stack */
+.stack{margin-top:48px;width:1600px}
+.stack div{display:flex;padding:20px 0;border-bottom:1px solid var(--line);font-size:26px;line-height:1.5}
+.stack div:first-child{border-top:1px solid var(--line)}
+.stack .k{width:260px;flex:none;color:var(--muted);font-size:22px;padding-top:3px}
+/* links */
+.links{margin-top:64px}
+.links div{display:flex;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line);width:1200px}
+.links .k{width:260px;color:var(--muted);font-size:24px}
+.links .v{font:500 32px/1.4 Inter,sans-serif}
+.end-name{position:absolute;right:128px;bottom:104px;text-align:right;font-size:24px;color:var(--sub)}
+</style></head><body><div class="sitebar"><a href="../index.html">← 作品一覧</a><span class="sp"></span><a href="xo_deck_zh-TW.html?keep" onclick="pfSet('zh-TW')" class="">繁中</a> <a href="xo_deck_ja.html?keep" onclick="pfSet('ja')" class="on">日本語</a> <a href="xo_deck_en.html?keep" onclick="pfSet('en')" class="">English</a></div><section class="slide k-cover"><div class="kick">ポートフォリオ｜モバイルアプリ</div><div class="xo">XO</div><div class="sub">匿名チャット・マッチングアプリ</div><div class="role">タイムライン・リアルタイムマッチング・チャット、累計100万ダウンロード以上</div><div class="meta"><b>王英皓（Harry）</b>路星股份有限公司｜モバイルアプリエンジニア｜2021年11月～2026年7月</div><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/login.gif" data-still="img/login.jpg" alt=""></div></div><div class="ph ios"><div class="frame"><img src="img/home.jpg" alt=""></div></div></div></section><section class="slide k-overview"><div class="top">XO</div><div class="idx">02</div><h1>プロダクトと担当範囲</h1><p class="lead" style="max-width:1600px">タイムラインと話題をきっかけに知り合い、リアルタイムマッチングとチャットでつながる匿名チャットアプリ。</p><div class="stats"><div class="stat"><div class="n">100万+</div><div class="l">ダウンロード</div></div><div class="stat"><div class="n">約10万</div><div class="l">MAU</div></div><div class="stat"><div class="n">約2万</div><div class="l">DAU</div></div><div class="stat"><div class="n">4つの市場</div><div class="l">台湾・フィリピン・インドネシア・米国</div></div></div><div class="rows"><div><span class="k">担当</span><span>iOS／Android の保守・リファクタリング・新機能開発</span></div><div><span class="k">担当フェーズ</span><span>仕様検討、技術選定、設計、実装、テスト、リリース、運用保守</span></div><div><span class="k">体制</span><span>PM 1名、UI/UX デザイナー 1名、バックエンド 1名、アプリ 1名（本人）／2週間スプリントの Scrum</span></div><div><span class="k">ツール</span><span>Jira・Bitbucket・Notion・Zeplin・Figma</span></div></div><div class="foot"><span>王英皓（Harry）</span><span>02 / 14</span></div></section><section class="slide k-grid"><div class="top">XO</div><div class="idx">03</div><h1>主な機能</h1><div class="grid"><div class="card"><div class="cn">01</div><div class="ct">タイムライン</div><div class="cd">カードのスワイプ、話題、投稿エディター（カメラフィルター）</div></div><div class="card"><div class="cn">02</div><div class="ct">リアルタイムマッチング</div><div class="cd">条件選択 → 検索 → 双方の承認 → 匿名チャットルーム</div></div><div class="card"><div class="cn">03</div><div class="ct">リアルタイムチャット</div><div class="cd">テキスト・画像・音声・Giphy、入力中・既読の同期</div></div><div class="card"><div class="cn">04</div><div class="ct">ミッション機能</div><div class="cd">デイリーミッション、リワード広告</div></div><div class="card"><div class="cn">05</div><div class="ct">アプリ内課金・サブスクリプション</div><div class="cd">VIP、キャンペーン、AI チャット、有料画像</div></div><div class="card"><div class="cn">06</div><div class="ct">AdMob Mediation</div><div class="cd">インタースティシャル・バナー・ネイティブ・リワード広告</div></div><div class="card"><div class="cn">07</div><div class="ct">Web3 機能</div><div class="cd">ウォレット、NFT、Chat-to-Earn、DID 認証</div></div><div class="card"><div class="cn">08</div><div class="ct">Deep Link</div><div class="cd">広告リンク → 計測 → 指定画面へ遷移</div></div></div><div class="foot"><span>王英皓（Harry）</span><span>03 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">04</div><h1>タイムラインと投稿</h1><ol class="bl" style="width:880px"><li>カード形式のタイムライン、話題ごとに切り替え</li><li>スワイプ中に次の投稿を先読み</li><li>投稿エディターはカメラフィルターと GIF に対応</li><li>写真の顔を検出し、スタンプで目元を隠す</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/home.gif" data-still="img/home.jpg" alt=""></div><div class="lab">iOS・タイムライン（録画）</div></div><div class="ph ios"><div class="frame"><img src="img/sticker.gif" data-still="img/sticker.jpg" alt=""></div><div class="lab">iOS・目元スタンプ（録画）</div></div></div><div class="foot"><span>王英皓（Harry）</span><span>04 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">05</div><h1>リアルタイムマッチング</h1><ol class="bl" style="width:720px"><li>条件を指定してリアルタイムにマッチング</li><li>Socket.IO のイベントでマッチングを進行</li><li>双方の承認後、24時間の匿名チャットルームを作成</li></ol><div class="phones pairwrap"><div class="pair"><img src="img/match_pair.gif" data-still="img/match_pair.png" alt=""><div class="pairlabs"><div class="lab">iOS（録画）</div><div class="lab">Android（録画）</div></div></div></div><div class="foot"><span>王英皓（Harry）</span><span>05 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">06</div><h1>リアルタイムチャット</h1><ol class="bl" style="width:720px"><li>Socket.IO によるリアルタイム通信</li><li>Realm によるメッセージのローカル保存</li><li>ページング API による過去メッセージの同期</li><li>テキスト・画像・GIF・音声メッセージに対応</li></ol><div class="phones pairwrap"><div class="pair"><img src="img/chat_pair.gif" data-still="img/chat_pair.png" alt=""><div class="pairlabs"><div class="lab">iOS（録画）</div><div class="lab">Android（録画）</div></div></div></div><div class="foot"><span>王英皓（Harry）</span><span>06 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">07</div><h1>ミッション・課金・広告</h1><ol class="bl" style="width:880px"><li>StoreKit／Play Billing でサブスクリプション・アプリ内課金を実装</li><li>注文の作成と検証はバックエンドで実施</li><li>AdMob Mediation：インタースティシャル・バナー・ネイティブ・リワード広告</li><li>ミッションにリワード広告を連動</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/store.jpg" alt=""></div><div class="lab">iOS・ミッション</div></div><div class="ph ios"><div class="frame"><img src="img/subscription.gif" data-still="img/subscription.jpg" alt=""></div><div class="lab">iOS・サブスクリプション（録画）</div></div></div><div class="foot"><span>王英皓（Harry）</span><span>07 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">08</div><h1>Web3 機能</h1><ol class="bl" style="width:880px"><li>自社開発ウォレット：残高照会・送金・取引履歴</li><li>WalletConnect で外部ウォレットを連携</li><li>NFT バッグ・NFT ペット</li><li>Chat-to-Earn：チャットの進捗でギフトと RStar を獲得</li><li>Farcaster／World ID ログイン、DID 認証</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/web3.gif" data-still="img/verification.jpg" alt=""></div><div class="lab">iOS・XO市民の認証（録画）</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_manager.jpg" alt=""></div><div class="lab">iOS・ウォレット管理</div></div></div><div class="foot"><span>王英皓（Harry）</span><span>08 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">09</div><h1>自社開発ウォレット</h1><ol class="bl" style="width:720px"><li>残高・トークン・取引履歴の照会</li><li>送金：アドレスと金額を入力 → 手数料を確認 → 送信</li><li>送信前にアドレス形式と残高をチェックし、手数料を試算</li><li>Socket.IO で取引ステータスを通知（処理中 → 確認済み）</li></ol><div class="phones n3"><div class="ph ios"><div class="frame"><img src="img/wallet_home.jpg" alt=""></div><div class="lab">ウォレットのホーム</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_confirm.jpg" alt=""></div><div class="lab">手数料の確認</div></div><div class="ph ios"><div class="frame"><img src="img/wallet_pending.jpg" alt=""></div><div class="lab">取引処理中</div></div></div><div class="note">iOS 旧バージョン v1.60（英語表示）。金額とアドレスはデモ用データ</div><div class="foot"><span>王英皓（Harry）</span><span>09 / 14</span></div></section><section class="slide k-arch"><div class="top">XO</div><div class="idx">10</div><h1>アーキテクチャ</h1><p class="lead" style="max-width:1664px">両OSとも MVVM。ViewModel は Inputs／Outputs のインターフェースで画面と分離</p><div class="ag"><div></div><div class="h">iOS</div><div class="h">Android</div><div class="ln">画面</div><div class="bx"><span>FlowController</span><span>UIKit ViewController</span><span>SwiftUI View</span></div><div class="bx"><span>Activity / Fragment</span><span>Jetpack Compose</span><span>Navigation Component</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">ViewModel</div><div class="bx"><span>Inputs / Outputs</span><span>Combine · RxSwift</span></div><div class="bx"><span>Inputs / Outputs</span><span>Coroutines / Flow · RxJava</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">Domain</div><div class="bx"><span>UseCase</span></div><div class="bx"><span class="na" style="border:0;background:none;padding:13px 0">（ViewModel から Repository を直接呼び出し）</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">データ</div><div class="bx"><span>Repository (async/await)</span><span>Moya · Socket.IO</span><span>Realm (actor)</span></div><div class="bx"><span>Repository</span><span>Retrofit · Socket.IO</span><span>Realm DAO · Paging 3</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">外部サービス</div><div class="ext"><span>REST API</span><span>Socket.IO server</span><span>Firebase · AdMob · Airbridge</span><span>App Store / Google Play</span></div></div><div class="foot"><span>王英皓（Harry）</span><span>10 / 14</span></div></section><section class="slide k-bullets"><div class="top">XO</div><div class="idx">11</div><h1>開発プロセス</h1><ol class="bl" style="width:1664px"><li>Fastlane ＋ Codemagic／CircleCI で両OSのビルド・リリースを自動化</li><li>Bitbucket Pipelines を tag で起動し、Staging／Production を分けて配信</li><li>AI エージェントを「計画→実装→レビュー→修正」のサイクルに組み込み、ユニットテストも作成</li><li>Lokalise に代わる多言語管理ツールを内製し、英語・日本語・繁体字中国語を一元管理</li></ol><div class="foot"><span>王英皓（Harry）</span><span>11 / 14</span></div></section><section class="slide k-results"><div class="top">XO</div><div class="idx">12</div><h1>実績</h1><div class="resg"><div class="card"><div class="n">約90% → 99%</div><div class="l">両OSのクラッシュフリーユーザー率（その後も維持）</div></div><div class="card"><div class="n">約50%削減</div><div class="l">アプリ容量（不要なサードパーティライブラリを整理）</div></div><div class="card"><div class="n">3ヶ月</div><div class="l">iOS アプリ全体のリファクタリング</div></div><div class="card"><div class="n">100万+</div><div class="l">ダウンロード</div></div></div><div class="foot"><span>王英皓（Harry）</span><span>12 / 14</span></div></section><section class="slide k-stack"><div class="top">XO</div><div class="idx">13</div><h1>Tech Stack</h1><div class="stack"><div><span class="k">iOS</span><span>SwiftUI · UIKit · SnapKit · Combine · Swift Concurrency · RxSwift · Moya · Realm · StoreKit</span></div><div><span class="k">Android</span><span>Jetpack Compose · Navigation Component · Paging 3 · Coroutines / Flow · Hilt · Retrofit · Realm · RxJava · Play Billing</span></div><div><span class="k">共通</span><span>Firebase · Amplitude · Google Analytics · AdMob · Socket.IO</span></div><div><span class="k">Web3</span><span>WalletConnect · Particle Wallet</span></div><div><span class="k">CI/CD</span><span>Fastlane · Codemagic · CircleCI · Bitbucket Pipelines</span></div><div><span class="k">計測・分析</span><span>Airbridge · Tenjin</span></div><div><span class="k">ツール</span><span>Jira · Bitbucket · Notion · Zeplin · Figma</span></div></div><div class="foot"><span>王英皓（Harry）</span><span>13 / 14</span></div></section><section class="slide k-links"><div class="top">XO</div><div class="idx">14</div><h1>リンク</h1><div class="links"><div><span class="k">App Store</span><span class="v">apps.apple.com/app/id1505684382</span></div><div><span class="k">Google Play</span><span class="v">play.google.com/store/apps/details?id=me.rooit.uc</span></div><div><span class="k">公式サイト</span><span class="v">xoxo.space</span></div></div><div class="end-name">王英皓（Harry）<br><span style="font-size:18px;color:var(--muted)">Mobile App Engineer</span></div><div class="foot"><span></span><span>14 / 14</span></div></section></body></html>

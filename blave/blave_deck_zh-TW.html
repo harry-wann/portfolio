@@ -1,0 +1,132 @@
+<!doctype html><html lang="zh-TW"><head><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>function pfLang(){try{var s=localStorage.getItem('pf-lang');if(s==='zh-TW'||s==='ja'||s==='en')return s}catch(e){}var ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'en']);for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase();if(l.indexOf('ja')===0)return 'ja';if(l.indexOf('zh')===0)return 'zh-TW';if(l.indexOf('en')===0)return 'en'}return 'en'}function pfSet(l){try{localStorage.setItem('pf-lang',l)}catch(e){}}(function(){var p=pfLang();if(p!=='zh-TW'&&!/[?&]keep\b/.test(location.search))location.replace('blave_deck_'+p+'.html'+location.hash)})()</script>
+<style>
+body{padding-top:56px}
+.slide{zoom:var(--z,1);margin-left:auto;margin-right:auto}
+.sitebar{position:fixed;top:0;left:0;right:0;height:44px;z-index:10;display:flex;align-items:center;gap:20px;padding:0 20px;background:rgba(248,248,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid #e6e6e6;font:500 14px/1 Inter,'Noto Sans TC','Noto Sans JP',sans-serif}
+.sitebar a{color:#545454;text-decoration:none}.sitebar a:hover{color:#e8702f}.sitebar a.on{color:#e8702f}
+.sitebar .sp{flex:1}
+</style>
+<script>function __z(){document.documentElement.style.setProperty('--z',Math.min(1,(window.innerWidth-24)/1920))}__z();addEventListener('resize',__z)</script>
+<meta charset="utf-8"><title>Blave 作品集簡報</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet"><style>
+@page{size:1920px 1080px;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f8f8f8;--card:#fdfdfd;--line:#e6e6e6;--text:#2d2d2d;--sub:#545454;--muted:#808080;--acc:#ff9960}
+html,body{background:#e6e6e6}
+body{font-family:'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;color:var(--text);-webkit-font-smoothing:antialiased;line-break:strict}
+.slide{width:1920px;height:1080px;background:var(--bg);position:relative;overflow:hidden;page-break-after:always;padding:96px 128px 0}
+.slide+.slide{margin-top:24px}
+@media print{.slide+.slide{margin-top:0}html,body{background:var(--bg)}}
+.top{position:absolute;left:128px;top:56px;font:700 22px/1 Inter,sans-serif;color:var(--muted);letter-spacing:.04em}
+.foot{position:absolute;left:128px;right:128px;bottom:48px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted)}
+.idx{font:500 24px/1 Inter,sans-serif;color:var(--acc);margin-top:40px}
+h1{font-size:60px;font-weight:700;line-height:1.2;margin-top:14px;letter-spacing:.01em}
+.lead{font-size:28px;line-height:1.6;color:var(--sub);margin-top:20px;max-width:1000px}
+.phones{position:absolute;right:120px;top:110px;display:flex;gap:40px;align-items:flex-start}
+.ph{width:330px;text-align:center}
+.ph .frame{border-radius:46px;padding:11px;background:#1b1c22;border:2px solid #2e3036}
+.ph img,.ph video{width:100%;display:block;border-radius:36px}
+.ph.and .frame{border-radius:8px}.ph.and img,.ph.and video{border-radius:0}
+/* bullets（2026-10-25：每頁 3～5 條短句） */
+.bl{margin-top:64px;display:flex;flex-direction:column;gap:34px}
+.bl li{list-style:none;display:flex;gap:26px;align-items:flex-start;font-size:34px;line-height:1.45;text-wrap:pretty;word-break:auto-phrase}
+.bl li::before{content:'';flex:none;width:12px;height:12px;margin-top:19px;background:var(--acc);border-radius:3px}
+.k-bullets .res{position:absolute;right:128px;top:300px}
+.k-bullets .res .n{font-size:54px;white-space:nowrap}
+.phones.n3{gap:28px}.phones.n3 .ph{width:290px}
+.ph .lab{font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.pair{width:740px}.pair img{width:100%;display:block}.pairlabs{display:flex;justify-content:space-between}.pairlabs .lab{width:338px;text-align:center;font:500 18px/1 Inter,sans-serif;color:var(--muted);margin-top:18px}
+.points{margin-top:44px;width:960px;counter-reset:p}
+.points li{list-style:none;position:relative;padding-left:64px;font-size:26px;line-height:1.6;color:var(--text);margin-bottom:26px}
+.points li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:4px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.code{position:absolute;left:128px;bottom:104px;font:400 18px/1.4 'JetBrains Mono',Menlo,monospace;color:var(--muted)}
+.code b{font-family:'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:500;color:var(--acc);margin-right:14px;font-size:16px}
+/* cover */
+.k-cover .kick{font-size:22px;color:var(--acc);margin-top:150px;letter-spacing:.06em}
+.k-cover .brand{font:900 200px/1 Inter,sans-serif;letter-spacing:-.03em;margin-top:24px}
+.k-cover .sub{font-size:52px;font-weight:500;margin-top:28px}
+.k-cover .role{font-size:30px;color:var(--sub);margin-top:22px}
+/* 2026-10-28 Harry：英文版字卡到手機——封面副標與角色句、有手機的頁標題都不能伸到手機底下 */
+.k-cover .sub,.k-cover .role{max-width:840px;text-wrap:balance;word-break:auto-phrase}
+.slide:has(.phones) h1{max-width:900px}
+.slide:has(.phones.n3) h1{max-width:700px}
+.k-cover .meta{position:absolute;left:128px;bottom:110px;font-size:22px;color:var(--muted);line-height:1.8}
+.k-cover .meta b{display:block;color:var(--text);font-weight:500;font-size:26px}
+.k-cover .phones{top:96px;right:140px}
+.k-cover .ph{width:360px}.k-cover .ph:nth-child(2){margin-top:90px}
+/* overview */
+.stats{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:44px 32px 42px 0}
+.stat+.stat{padding-left:36px;border-left:1px solid var(--line)}
+.stat .n{font:700 68px/1.1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;}
+.stat .l{font-size:24px;color:var(--sub);margin-top:12px;line-height:1.5}
+.rows{margin-top:48px}
+.rows div{display:flex;font-size:27px;line-height:1.5;padding:15px 0;border-bottom:1px solid var(--line)}
+.rows dt,.rows .k{width:240px;color:var(--muted);flex:none}
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:72px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:40px 30px;min-height:300px}
+.card .ct{font-size:28px;font-weight:700;line-height:1.35}
+.card .cn{font:600 18px/1 Inter,sans-serif;color:var(--acc);margin-bottom:18px}
+.card .cd{font-size:24px;line-height:1.6;color:var(--sub);margin-top:16px}
+/* web3 */
+.w3{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;width:1200px;margin-top:48px}
+.w3 .card{min-height:0;padding:28px 30px}
+.w3 .ct{font-size:25px}.w3 .cd{font-size:21px;margin-top:10px}
+/* arch */
+.ag{display:grid;grid-template-columns:150px 1fr 1fr;column-gap:40px;margin-top:30px;width:1660px}
+.ag .h{font:700 26px/1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;padding-bottom:18px}
+.ag .ln{font-size:19px;color:var(--muted);display:flex;align-items:center}
+.ag .bx{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;align-content:flex-start}
+.ag .bx span{border:1.5px solid #d9d9d9;background:var(--card);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif}
+.ag .na{font-size:19px;color:var(--muted)}
+.ag .ar{height:28px;position:relative}
+.ag .ar::before{content:'';position:absolute;left:40px;top:4px;bottom:8px;border-left:2px solid #a6a6a6}
+.ag .ar::after{content:'';position:absolute;left:34px;bottom:2px;border:7px solid transparent;border-top:9px solid #a6a6a6;border-bottom:0}
+.ag .ext{grid-column:2 / span 2;display:flex;gap:12px}
+.ag .ext span{border:1.5px dashed #b3b3b3;background:transparent;color:var(--sub);border-radius:10px;padding:11px 15px;font:500 20px/1.2 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif}
+.di{position:absolute;left:128px;bottom:150px;font-size:22px;color:var(--sub)}
+.legend{position:absolute;left:128px;bottom:104px;display:flex;gap:40px;font-size:18px;color:var(--muted)}
+.legend i{display:inline-block;width:28px;height:16px;border-radius:4px;margin-right:10px;vertical-align:-2px}
+/* case */
+.case{display:flex;gap:56px;margin-top:40px}
+.case .left{width:1120px}
+.prob{border-left:4px solid var(--acc);padding:6px 0 6px 28px;font-size:25px;line-height:1.65;color:var(--sub)}
+.tag{font:600 17px/1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;color:var(--acc);letter-spacing:.08em;margin-bottom:12px;display:block}
+.steps{margin-top:36px;counter-reset:p}
+.steps li{list-style:none;position:relative;padding-left:60px;font-size:25px;line-height:1.6;margin-bottom:20px}
+.steps li::before{counter-increment:p;content:counter(p,decimal-leading-zero);position:absolute;left:0;top:3px;font:600 20px/1.6 Inter,sans-serif;color:var(--acc)}
+.res{width:470px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:44px 40px;align-self:flex-start;margin-top:4px}
+.res .n{font:700 64px/1.1 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;margin-top:8px}
+.res .l{font-size:22px;color:var(--sub);margin-top:16px;line-height:1.6}
+/* three */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.three .card{min-height:560px;padding:44px 40px}
+.three .ct{font-size:34px;margin-bottom:10px}
+.three p{font-size:26px;line-height:1.65;color:var(--sub);margin-top:22px}
+/* results */
+.resg{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:56px}
+.resg.n3{grid-template-columns:repeat(3,1fr);margin-top:88px}.resg.n3 .card{min-height:470px;padding:72px 52px 64px;display:flex;flex-direction:column;justify-content:space-between}.resg.n3 .n{font-size:120px;white-space:nowrap}html[lang=en] .resg.n3 .n{font-size:92px}.resg.n3 .l{font-size:30px;line-height:1.5;text-wrap:balance;word-break:auto-phrase}
+.resg .card{min-height:0;padding:56px 52px 52px}
+.resg .n{font:700 92px/1.05 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif}
+.resg .l{font-size:28px;color:var(--sub);margin-top:16px}
+.note{position:absolute;left:128px;bottom:104px;font-size:20px;color:var(--muted)}
+/* stack */
+.stack{margin-top:48px;width:1600px}
+.stack div{display:flex;padding:20px 0;border-bottom:1px solid var(--line);font-size:26px;line-height:1.5}
+.stack div:first-child{border-top:1px solid var(--line)}
+.stack .k{width:260px;flex:none;color:var(--muted);font-size:22px;padding-top:3px}
+/* charts（2026-10-26 圖表選單：左分類＋項目、右一支手機） */
+.cats{margin-top:40px;width:1220px}
+.cats .row{display:flex;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line)}
+.cats .row:first-child{border-top:1px solid var(--line)}
+.cats .k{width:250px;flex:none;font-size:26px;font-weight:700;line-height:1.3;padding-top:9px;color:var(--acc)}
+.cats .items{display:flex;flex-wrap:wrap;gap:12px}
+.cats .items span{border:1.5px solid #d9d9d9;background:var(--card);border-radius:10px;padding:10px 16px;font:500 22px/1.2 Inter,'Inter','Noto Sans CJK TC','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;white-space:nowrap}
+/* links */
+.links{margin-top:64px}
+.links div{display:flex;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--line);width:1500px}
+.links .k{width:260px;color:var(--muted);font-size:24px}
+.links .v{font:500 32px/1.4 Inter,sans-serif}
+.end-name{position:absolute;right:128px;bottom:104px;text-align:right;font-size:24px;color:var(--sub)}
+</style></head><body><div class="sitebar"><a href="../index.html">← 作品列表</a><span class="sp"></span><a href="blave_deck_zh-TW.html?keep" onclick="pfSet('zh-TW')" class="on">繁中</a> <a href="blave_deck_ja.html?keep" onclick="pfSet('ja')" class="">日本語</a> <a href="blave_deck_en.html?keep" onclick="pfSet('en')" class="">English</a></div><section class="slide k-cover"><div class="kick">作品集｜Mobile App</div><div class="brand">Blave</div><div class="sub">加密貨幣市場分析 App</div><div class="role">K 線、清算地圖、鯨魚追蹤與 AI 市場分析</div><div class="meta"><b>王英皓（Harry）</b>吾集科技股份有限公司｜Mobile App Engineer｜2025/06 – 2026/05</div><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/home.gif" data-still="img/home.jpg" alt=""></div></div><div class="ph ios"><div class="frame"><img src="img/liq.jpg" alt=""></div></div></div></section><section class="slide k-overview"><div class="top">Blave</div><div class="idx">02</div><h1>產品與我的角色</h1><p class="lead" style="max-width:1600px">把加密貨幣市場數據做成儀表板與圖表，並以 AI 聊天回答市場問題。</p><div class="stats"><div class="stat"><div class="n">2 個月</div><div class="l">iOS 從零開發到上架</div></div><div class="stat"><div class="n">2 個月</div><div class="l">完成與 iOS 功能對齊的 Android 版</div></div><div class="stat"><div class="n">雙平台</div><div class="l">App Store・Google Play</div></div></div><div class="rows"><div><span class="k">角色</span><span>從零開發 iOS／Android App 到上架，並持續開發新功能</span></div><div><span class="k">負責範圍</span><span>需求討論、技術選型、設計、實作、測試、上架與商店設定、維運</span></div><div><span class="k">開發方式</span><span>Scrum，上架後持續新增功能</span></div><div><span class="k">協作</span><span>GitHub・GitHub Projects・Figma</span></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>02 / 18</span></div></section><section class="slide k-grid"><div class="top">Blave</div><div class="idx">03</div><h1>主要功能</h1><div class="grid"><div class="card"><div class="cn">01</div><div class="ct">Google／Apple 登入</div><div class="cd">Email、Google、Apple 帳號登入與註冊</div></div><div class="card"><div class="cn">02</div><div class="ct">市場數據儀表板</div><div class="cd">市場方向、BTC 預測、多空篩選</div></div><div class="card"><div class="cn">03</div><div class="ct">K 線圖與即時行情</div><div class="cd">切換幣種與週期，疊加指標，最後一根 K 線即時更新</div></div><div class="card"><div class="cn">04</div><div class="ct">Studio 圖表</div><div class="cd">籌碼集中度、清算地圖、鯨魚追蹤、板塊輪動</div></div><div class="card"><div class="cn">05</div><div class="ct">Screener・Watchlist・Feeds</div><div class="cd">依條件篩幣、自選清單加指標、訂閱資訊流</div></div><div class="card"><div class="cn">06</div><div class="ct">AI 聊天</div><div class="cd">用自然語言問市場，回覆逐字出現</div></div><div class="card"><div class="cn">07</div><div class="ct">付費訂閱</div><div class="cd">Basic／Pro 方案，購買後即時解鎖</div></div><div class="card"><div class="cn">08</div><div class="ct">個人頁</div><div class="cd">深／淺色主題、中／英文、API 管理</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>03 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">04</div><h1 style="max-width:1000px">登入與註冊</h1><ol class="bl" style="width:880px"><li>打開 App 先檢查登入狀態與 Remote Config</li><li>支援 Email、Google、Apple 登入</li><li>登入狀態存在 Keychain，重開 App 不用再登入</li><li>提供註冊與忘記密碼流程</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/login.gif" data-still="img/login.jpg" alt=""></div><div class="lab">iOS・啟動與登入（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/register.jpg" alt=""></div><div class="lab">iOS・註冊</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>04 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">05</div><h1 style="max-width:1000px">市場數據儀表板</h1><ol class="bl" style="width:880px"><li>首頁以卡片呈現市場方向與 BTC 預測</li><li>多空清單可切換篩選條件</li><li>以 Combine 將資料綁定到畫面</li><li>進入背景停止更新，回到前景重新抓取</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/home.gif" data-still="img/home.jpg" alt=""></div><div class="lab">iOS・儀表板（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/home_list.jpg" alt=""></div><div class="lab">iOS・多空篩選</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>05 / 18</span></div></section><section class="slide k-charts"><div class="top">Blave</div><div class="idx">06</div><h1>圖表與指標</h1><p class="lead" style="max-width:1220px">圖表選單依交易情境分成五類；以籌碼集中度示範總覽、變化、板塊、歷史四個分頁</p><div class="cats"><div class="row"><span class="k">交易工具</span><div class="items"><span>篩選器</span><span>觀察清單</span><span>儀表板</span><span>AI</span><span>快訊</span></div></div><div class="row"><span class="k">持倉交易</span><div class="items"><span>籌碼集中度</span><span>巨鯨警報</span><span>爆倉</span><span>多空力道</span><span>Blave 頂尖交易員</span><span>資金費率</span><span>OI 失衡</span></div></div><div class="row"><span class="k">波動交易</span><div class="items"><span>異常漲跌雷達</span><span>主流／山寨</span><span>擠壓動能</span></div></div><div class="row"><span class="k">情緒交易</span><div class="items"><span>X</span><span>市場情緒</span><span>資金稀缺</span></div></div><div class="row"><span class="k">其他</span><div class="items"><span>Hyperliquid</span><span>板塊輪動</span><span>gTrade</span></div></div></div><div class="phones n1"><div class="ph ios"><div class="frame"><img src="img/holder.gif" data-still="img/holder.jpg" alt=""></div><div class="lab">iOS・籌碼集中度（錄影）</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>06 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">07</div><h1 style="max-width:1000px">K 線圖與即時行情</h1><ol class="bl" style="width:880px"><li>以 TradingView Lightweight Charts 繪製 K 線</li><li>切換幣種或週期時，重新抓取 K 線與指標</li><li>以 Server-Sent Events 即時更新最後一根 K 線</li><li>連線中斷後自動重新連線</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/kline.gif" data-still="img/kline.jpg" alt=""></div><div class="lab">iOS・切換週期與幣種（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/kline_tl.gif" data-still="img/kline_tl.jpg" alt=""></div><div class="lab">iOS・即時更新（8 倍縮時）</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>07 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">08</div><h1 style="max-width:1000px">指標設定與免費上限</h1><ol class="bl" style="width:880px"><li>Dashboard 可勾選要疊加的指標</li><li>免費方案 2 個、Pro 10 個，上限由 isPro 決定</li><li>超過上限時無法套用，並提示升級 Pro</li><li>點提示直接進入方案頁</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/pro.gif" data-still="img/indicators.jpg" alt=""></div><div class="lab">iOS・指標上限（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/pro_limit.jpg" alt=""></div><div class="lab">iOS・超過上限</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>08 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">09</div><h1 style="max-width:1000px">清算地圖與鯨魚追蹤</h1><ol class="bl" style="width:880px"><li>清算地圖與鯨魚追蹤共用同一個樹狀圖元件</li><li>Map 分頁以紅／綠區塊呈現多單與空單在各價位的預估清算量</li><li>Scatter 以散佈圖交叉比對持倉量與成交量的變化</li><li>分頁之間共用幣種與時間範圍的選擇</li><li>統計圖以 DGCharts 繪製</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/liquidation.gif" data-still="img/liquidation.jpg" alt=""></div><div class="lab">iOS・清算地圖（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/whale.gif" data-still="img/whale_scatter.jpg" alt=""></div><div class="lab">iOS・鯨魚追蹤（錄影）</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>09 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">10</div><h1 style="max-width:1000px">板塊輪動</h1><ol class="bl" style="width:880px"><li>以熱度圖呈現各板塊不同期間的漲跌</li><li>Sectors 分頁切換板塊，看板塊內各幣種的漲跌</li><li>History 分頁以折線比較各板塊的累積漲跌，可自選板塊</li><li>週期、時間範圍等選擇器做成共用圖表元件</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/sector.gif" data-still="img/sector_rot.jpg" alt=""></div><div class="lab">iOS・板塊輪動（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/sector_hist.jpg" alt=""></div><div class="lab">iOS・History</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>10 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">11</div><h1 style="max-width:840px">Screener・Watchlist・Feeds</h1><ol class="bl" style="width:720px"><li>以條件組合篩選幣種，條件可儲存</li><li>指標條件可調整週期等參數，套用後列出符合的幣種</li><li>Watchlist 建立自選清單，可加上指標欄位</li><li>Feeds 以時間軸顯示鏈上動態，可設定資訊來源</li></ol><div class="phones n3"><div class="ph ios"><div class="frame"><img src="img/tools.gif" data-still="img/screener.jpg" alt=""></div><div class="lab">iOS・篩選、清單、快訊（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/watchlist.jpg" alt=""></div><div class="lab">iOS・Watchlist</div></div><div class="ph ios"><div class="frame"><img src="img/feeds.jpg" alt=""></div><div class="lab">iOS・Feeds</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>11 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">12</div><h1 style="max-width:1000px">AI 聊天</h1><ol class="bl" style="width:880px"><li>以自然語言詢問市場問題</li><li>回覆以打字動畫逐字出現，可含表格與連結</li><li>以 UIKit 列表呈現對話，回覆以 MarkdownUI 繪製</li><li>捲動時保留打字進度，不重播動畫</li></ol><div class="phones n2"><div class="ph ios"><div class="frame"><img src="img/ai_chat.gif" data-still="img/ai_chat.jpg" alt=""></div><div class="lab">iOS・AI 回覆（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/ai_chat_start.jpg" alt=""></div><div class="lab">iOS・建議問題</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>12 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">13</div><h1 style="max-width:840px">付費訂閱與 Pro 提示</h1><ol class="bl" style="width:720px"><li>以 StoreKit 2／Play Billing 實作 Basic／Pro 訂閱</li><li>交易經後端驗證後，所有畫面同步解鎖 Pro 功能</li><li>免費用戶碰到 Pro 功能時，導向方案頁</li><li>方案頁比較 Basic／Pro 的功能額度</li></ol><div class="phones n3"><div class="ph ios"><div class="frame"><img src="img/pricing.gif" data-still="img/pricing.jpg" alt=""></div><div class="lab">iOS・訂閱方案（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/pricing_pro.jpg" alt=""></div><div class="lab">iOS・Pro 方案</div></div><div class="ph ios"><div class="frame"><img src="img/pro_hint.jpg" alt=""></div><div class="lab">iOS・Pro 功能提示</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>13 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">14</div><h1 style="max-width:840px">個人頁</h1><ol class="bl" style="width:720px"><li>深／淺色主題可即時切換，全 App 同步</li><li>語言可切換英文、繁中、簡中，簡中由建置階段自動轉換</li><li>API 管理可連接交易所的唯讀 API</li><li>另有推薦碼、恢復購買、刪除帳號等設定</li><li>登入、Pro 狀態與前後景切換統一由基底 ViewModel 處理</li></ol><div class="phones n3"><div class="ph ios"><div class="frame"><img src="img/profile.gif" data-still="img/profile.jpg" alt=""></div><div class="lab">iOS・主題與語言（錄影）</div></div><div class="ph ios"><div class="frame"><img src="img/home_dark.jpg" alt=""></div><div class="lab">iOS・深色首頁</div></div><div class="ph ios"><div class="frame"><img src="img/api.jpg" alt=""></div><div class="lab">iOS・API 管理</div></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>14 / 18</span></div></section><section class="slide k-arch"><div class="top">Blave</div><div class="idx">15</div><h1>架構</h1><p class="lead" style="max-width:1664px">雙平台採相同分層，檔案一一對應</p><div class="ag"><div></div><div class="h">iOS</div><div class="h">Android</div><div class="ln">畫面</div><div class="bx"><span>SwiftUI View</span><span>UIKit（AI 聊天）</span></div><div class="bx"><span>Jetpack Compose</span><span>Navigation Compose</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">ViewModel</div><div class="bx"><span>ViewModel</span><span>Combine · RxSwift</span><span>Swift Concurrency</span></div><div class="bx"><span>ViewModel</span><span>Coroutines / Flow</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">Service</div><div class="bx"><span>Service：組合 API、快取</span></div><div class="bx"><span>Service：組合 API、快取</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">資料</div><div class="bx"><span>Repository · Moya</span><span>EventSource (SSE)</span><span>StoreKit 2</span></div><div class="bx"><span>Repository · Retrofit</span><span>okhttp-eventsource (SSE)</span><span>Play Billing</span></div><div></div><div class="ar"></div><div class="ar"></div><div class="ln">外部服務</div><div class="ext"><span>Blave API</span><span>行情串流（SSE）</span><span>Firebase</span><span>App Store / Google Play</span></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>15 / 18</span></div></section><section class="slide k-bullets"><div class="top">Blave</div><div class="idx">16</div><h1 style="max-width:1784px">工程流程</h1><ol class="bl" style="width:1664px"><li>以 Fastlane 建立自動發布流程</li><li>版號遞增、建置、簽署一次完成</li><li>上傳 TestFlight 與 Firebase App Distribution</li><li>隨版本附上 release notes、發送 Slack 通知</li><li>以 Crashlytics 記錄 API 與解碼錯誤</li></ol><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>16 / 18</span></div></section><section class="slide k-stack"><div class="top">Blave</div><div class="idx">17</div><h1>Tech Stack</h1><div class="stack"><div><span class="k">iOS</span><span>SwiftUI · Combine · Swift Concurrency · RxSwift · Moya · StoreKit 2 · DGCharts · TradingView Lightweight Charts</span></div><div><span class="k">Android</span><span>Jetpack Compose · Coroutines / Flow · Hilt · Navigation Compose · Retrofit · MPAndroidChart · TradingView Lightweight Charts · Play Billing</span></div><div><span class="k">共通</span><span>Firebase · Mixpanel · Google Analytics</span></div><div><span class="k">CI/CD</span><span>Fastlane</span></div><div><span class="k">協作・設計</span><span>GitHub · GitHub Projects · Figma</span></div></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>17 / 18</span></div></section><section class="slide k-links"><div class="top">Blave</div><div class="idx">18</div><h1>連結</h1><div class="links"><div><span class="k">App Store</span><span class="v">apps.apple.com/app/blave/id6747014559</span></div><div><span class="k">Google Play</span><span class="v">play.google.com/store/apps/details?id=org.wuchi.blave.android</span></div><div><span class="k">官方網站</span><span class="v">blave.org</span></div></div><div class="end-name">王英皓（Harry）<br><span style="font-size:18px;color:var(--muted)">Mobile App Engineer</span></div><div class="foot"><span>王英皓（Harry）｜Blave 作品集</span><span>18 / 18</span></div></section></body></html>
